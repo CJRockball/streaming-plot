@@ -6,8 +6,6 @@ Some small programs to try out streaming data with websockets.
 - $\textcolor{green}{matplotlib\textunderscore plot.py}$ and $\textcolor{green}{bokeh\textunderscore plot.py}$ will read from the db and plot the data 'live'
 
 
-
-
 ## How to use
 
 - Download repo

@@ -20,20 +20,26 @@ def create_price(s0, mu, sigma):
     return s0
 
 
-async def data_serv(websocket, path):
-    #name = await websocket.recv()
-    #print("< {}".format(name))
-
+async def data_serv(websocket):
+    """
+    Function to fetch a price and send via websockets    
+    """
+    
+    # Set initial price
     price = 145
     
     while True:
-#    for _ in range(20):
+        # Get price
         price = create_price(price, 0.05, 0.1)
-        ts = np.random.exponential(scale=0.1, size=(1))[0]
-        #time.sleep(0.050)
+        # Get random waiting time
+        #ts = np.random.exponential(scale=0.1, size=(1))[0]
+        
+        # Get current time
         ct = time.time()
+        # jsonify the data
         data = json.dumps({'time': ct, 'price':(str(round(price, 2)))})
-        #await websocket.send((str(ct),' ', str(round(price, 2))))
+        
+        # Send data and wait for 50msec
         await websocket.send(data)
         await asyncio.sleep(0.0500) #ts)
 
