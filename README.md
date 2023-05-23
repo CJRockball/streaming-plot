@@ -1,6 +1,12 @@
 # Plot Streaming Websockets Data
 
-Set up one server to generate fake data, read it to a sql database. The plotting functions read it from the db and plots it.
+Some small programs to try out streaming data with websockets. 
+- ```+fake_data.py``` will generate a stock price and send it by websockets.
+- ```+save2sql.py``` will read the data on websockets and save it to a database.
+- ```+matplotlib_plot.py```` and ```+bokeh_plot.py``` will read from the db and plot the data 'live'
+
+
+
 
 ## How to use
 
