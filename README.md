@@ -1,9 +1,9 @@
 # Plot Streaming Websockets Data
 
 Some small programs to try out streaming data with websockets. 
-- <code style="color : Blue">fake_data.py</code> will generate a stock price and send it by websockets.
-- ```save2sql.py``` will read the data on websockets and save it to a database.
-- ```matplotlib_plot.py``` and ```bokeh_plot.py``` will read from the db and plot the data 'live'
+- $\textcolor{green}{fake\textunderscore data.py}$ will generate a stock price and send it by websockets.
+- $\textcolor{green}{save2sql.py}$ will read the data on websockets and save it to a database.
+- $\textcolor{green}{matplotlib\textunderscore plot.py}$ and $\textcolor{green}{bokeh\textunderscore plot.py}$ will read from the db and plot the data 'live'
 
 
 
