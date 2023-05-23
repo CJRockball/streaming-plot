@@ -14,3 +14,7 @@ Some small programs to try out streaming data with websockets.
 - run save2sql in it's own terminal ```python save2sql.py```
 - run matplotlib_plot in it's own terminal ```python matplotlib_plot.py```
 - OR run the bokeh server ```bokeh server --shoq bokeh_plot.py```
+
+## Real Example
+
+[Live plotting of Bitcoin price from Binance](https://www.youtube.com/watch?v=zHPaF8NoeuA)
